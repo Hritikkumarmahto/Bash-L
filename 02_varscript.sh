@@ -250,3 +250,69 @@ do
 done
 
 
+
+
+
+
+
+
+
+
+
+#while loop
+
+a=0
+b=10
+
+while [ $a -le $b ]
+do 
+	echo "number is $a"
+	let a++
+done
+
+while read myFile
+do
+	echo "$myFile"
+done  < names.txt
+
+
+
+
+# until loop
+c=10
+
+until [[ $c -eq 1 ]]
+do 
+	echo "values are $c "
+	let c--
+done
+
+
+
+
+
+# functions 
+
+function myFun {
+	echo "This is a function"
+}
+myFun
+
+myFunc(){
+	echo "hello this is my finction"
+}
+myFunc
+
+
+
+
+# function with arguments
+function myFunction {
+	num1=$1
+	num2=$2
+	
+	let sum=num1+num2
+	
+echo " sum if the numbers are $sum"
+}
+myFunction 12 23
