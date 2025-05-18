@@ -1,5 +1,5 @@
 #!/bin/bash
-a=10
+:'a=10
 name="Hritik"
 age=22
 
@@ -63,7 +63,7 @@ echo "${myArrayKey[name]}"
 
 
 
-:'
+
 
 #STRING OPERATIONS
 
@@ -200,7 +200,7 @@ then
 else 
 	echo "not eligible "
 fi
-'
+
 
 
 #for loop 
@@ -306,7 +306,8 @@ myFunc
 
 
 
-# function with arguments
+# function with arguments\
+
 function myFunction {
 	num1=$1
 	num2=$2
@@ -316,3 +317,47 @@ function myFunction {
 echo " sum if the numbers are $sum"
 }
 myFunction 12 23
+'
+
+
+
+
+
+
+
+
+
+
+# arguments in rintiome
+
+# this is mostly yused to give \argument in runtime
+
+
+echo "first argument is $1"
+echo "seconfd argument is $2"
+
+echo "all files are $@"
+echo "number of files are $#"
+
+
+
+#to iterate over filename
+
+
+for filename in $@
+do 
+	echo "copying file $filename"
+done
+
+# to shift the gap means shift the gap and move forward
+
+echo "name is $1"
+
+shift
+
+echo "Description is $2"
+
+
+
+
+
