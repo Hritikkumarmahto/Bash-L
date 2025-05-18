@@ -317,7 +317,7 @@ function myFunction {
 echo " sum if the numbers are $sum"
 }
 myFunction 12 23
-'
+
 
 
 
@@ -358,6 +358,22 @@ shift
 echo "Description is $2"
 
 
+#break and continue 
 
+no=3
 
+for i in 1 2 3 4 5 
+do
+if [[ $no -eq $i ]]
+then
+	echo " number found"
+	break
+fi
 
+done
+'
+
+# generatuing random number using RAndom
+
+no=$(( $RANDOM % 6 + 1 ))
+echo "$no"
